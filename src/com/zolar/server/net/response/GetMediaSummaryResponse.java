@@ -5,7 +5,7 @@ import java.util.List;
 
 import com.zolar.server.net.bean.MediaSummary;
 
-public class GetMedaiSummaryResponse extends BaseResponse {
+public class GetMediaSummaryResponse extends BaseResponse {
 	public List<MediaSummary> content =new ArrayList<MediaSummary>();
 
 }
