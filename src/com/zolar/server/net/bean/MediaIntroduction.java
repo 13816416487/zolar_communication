@@ -8,6 +8,8 @@ package com.zolar.server.net.bean;
 
 public class MediaIntroduction extends MediaSummary {
 
+	private String director = "";		// 导演列表
+	
     private String castList = "";       // 演员列表
 
     private String plotDesc = "";       // 剧情描述
@@ -27,5 +29,14 @@ public class MediaIntroduction extends MediaSummary {
     public void setPlotDesc(String plotDesc) {
         this.plotDesc = plotDesc;
     }
+
+	public String getDirector() {
+		return director;
+	}
+
+	public void setDirector(String director) {
+		this.director = director;
+	}
+    
 
 }
