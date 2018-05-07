@@ -46,4 +46,11 @@ public class SearchMediaResultSet {
     public void setEpisode(MediaEpisode episode) {
         this.episode = episode;
     }
+
+	@Override
+	public String toString() {
+		return "SearchMediaResultSet [raw=" + raw + ", type=" + type + ", summary=" + summary + ", episode=" + episode
+				+ "]";
+	}
+
 }
