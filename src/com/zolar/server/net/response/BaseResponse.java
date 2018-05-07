@@ -20,4 +20,8 @@ public class BaseResponse {
                 ", devDev='" + devDev + '\'' +
                 '}';
     }
+    
+    public boolean isSuccess() {
+    	return errorCode == Code_Success;
+    }
 }
