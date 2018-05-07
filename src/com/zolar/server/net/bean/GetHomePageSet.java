@@ -12,4 +12,6 @@ public class GetHomePageSet {
 
 	// 返回样式
 	public String responseType = "fresh";
+	
+	public long serverTime = 0L;
 }

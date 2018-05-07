@@ -18,6 +18,8 @@ public class MediaEpisode {
 
     private String srcURL = "";         // 媒体资源路径
     
+    private long progressUpdateTime = 0L;	// 播放进度更新时间
+    
     private int progress = 0;			// 播放进度
 
 	public int getId() {
@@ -68,11 +70,22 @@ public class MediaEpisode {
 		this.progress = progress;
 	}
 
+	public long getProgressUpdateTime() {
+		return progressUpdateTime;
+	}
+
+	public void setProgressUpdateTime(long progressUpdateTime) {
+		this.progressUpdateTime = progressUpdateTime;
+	}
+
 	@Override
 	public String toString() {
 		return "MediaEpisode [id=" + id + ", mediaName=" + mediaName + ", episodeName=" + episodeName + ", imgURL="
-				+ imgURL + ", srcURL=" + srcURL + ", progress=" + progress + "]";
+				+ imgURL + ", srcURL=" + srcURL + ", progressUpdateTime=" + progressUpdateTime + ", progress="
+				+ progress + "]";
 	}
+
+	
 
 
    
