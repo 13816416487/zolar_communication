@@ -10,14 +10,14 @@ public class BaseResponse {
 
 	private int errorCode = Code_Success;
     public String userMsg = "";	// 给用户展示
-    public String devDev = "";	// 给安卓的提示信息
+    public String devMsg = "";	// 给安卓的提示信息
 
     @Override
     public String toString() {
         return "BaseResponse{" +
                 "errorCode=" + errorCode +
                 ", userMsg='" + userMsg + '\'' +
-                ", devDev='" + devDev + '\'' +
+                ", devMsg='" + devMsg + '\'' +
                 '}';
     }
     
