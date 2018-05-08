@@ -1,7 +1,5 @@
 package com.zolar.server.net.bean;
 
-import java.util.Date;
-
 public class PlayHistory {
 
 	private int history_id;
