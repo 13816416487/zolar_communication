@@ -7,7 +7,7 @@ public class PlayHistory {
 	private int history_id;
 	private int account_id;
 	private int m_child_id;
-	private Date updatetime;
+	private long progressUpdateTime;
 	private int progress;
 
 	public int getHistory_id() {
@@ -34,13 +34,7 @@ public class PlayHistory {
 		this.m_child_id = m_child_id;
 	}
 
-	public Date getUpdatetime() {
-		return updatetime;
-	}
-
-	public void setUpdatetime(Date updatetime) {
-		this.updatetime = updatetime;
-	}
+	
 
 	public int getProgress() {
 		return progress;
@@ -50,11 +44,20 @@ public class PlayHistory {
 		this.progress = progress;
 	}
 
+	public long getProgressUpdateTime() {
+		return progressUpdateTime;
+	}
+
+	public void setProgressUpdateTime(long progressUpdateTime) {
+		this.progressUpdateTime = progressUpdateTime;
+	}
+
 	@Override
 	public String toString() {
 		return "PlayHistory [history_id=" + history_id + ", account_id=" + account_id + ", m_child_id=" + m_child_id
-				+ ", updatetime=" + updatetime + ", progress=" + progress + "]";
+				+ ", progressUpdateTime=" + progressUpdateTime + ", progress=" + progress + "]";
 	}
+
 
 	
 
