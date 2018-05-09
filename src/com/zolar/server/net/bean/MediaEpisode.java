@@ -10,7 +10,7 @@ public class MediaEpisode {
 
     private int id = 0;                 // 媒体m_child_id
 
-    private int m_id=0;					// 媒体m_id
+    private int mediaId=0;					// 媒体m_id
     
     private String mediaName = "";      // 媒体名称
     
@@ -34,12 +34,14 @@ public class MediaEpisode {
 
 	
 	
-	public int getM_id() {
-		return m_id;
+	
+
+	public int getMediaId() {
+		return mediaId;
 	}
 
-	public void setM_id(int m_id) {
-		this.m_id = m_id;
+	public void setMediaId(int mediaId) {
+		this.mediaId = mediaId;
 	}
 
 	public String getMediaName() {
@@ -92,10 +94,12 @@ public class MediaEpisode {
 
 	@Override
 	public String toString() {
-		return "MediaEpisode [id=" + id + ", m_id=" + m_id + ", mediaName=" + mediaName + ", episodeName=" + episodeName
-				+ ", imgURL=" + imgURL + ", srcURL=" + srcURL + ", progressUpdateTime=" + progressUpdateTime
-				+ ", progress=" + progress + "]";
+		return "MediaEpisode [id=" + id + ", mediaId=" + mediaId + ", mediaName=" + mediaName + ", episodeName="
+				+ episodeName + ", imgURL=" + imgURL + ", srcURL=" + srcURL + ", progressUpdateTime="
+				+ progressUpdateTime + ", progress=" + progress + "]";
 	}
+
+	
 
 
 }
