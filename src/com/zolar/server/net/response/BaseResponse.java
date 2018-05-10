@@ -8,7 +8,7 @@ public class BaseResponse {
 
 	public static final int Code_Success = 0;
 
-	private int errorCode = Code_Success;
+	public int errorCode = Code_Success;
     public String userMsg = "";	// 给用户展示
     public String devMsg = "";	// 给安卓的提示信息
 
