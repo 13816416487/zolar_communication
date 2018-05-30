@@ -62,5 +62,11 @@ public class SearchMediaRawData {
     	return distance.equals(0f);
     }
 
+	@Override
+	public String toString() {
+		return "SearchMediaRawData [distance=" + distance + ", id=" + id + ", name=" + name + ", tag=" + tag + "]";
+	}
 
+
+    
 }
