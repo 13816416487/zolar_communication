@@ -6,7 +6,7 @@ package com.zolar.server.net.response;
 
 public class BaseResponse {
 
-	public static final int Code_Success = 0;
+	public static final int Code_Success = 0;	//(为0的时候是成功 )
 
 	public int errorCode = Code_Success;
     public String userMsg = "";	// 给用户展示
