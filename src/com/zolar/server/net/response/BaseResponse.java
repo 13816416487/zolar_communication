@@ -20,7 +20,7 @@ public class BaseResponse {
                 ", devMsg='" + devMsg + '\'' +
                 '}';
     }
-    
+     
     public boolean isSuccess() {
     	return errorCode == Code_Success;
     }
