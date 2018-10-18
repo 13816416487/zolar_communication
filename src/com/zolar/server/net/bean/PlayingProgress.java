@@ -10,7 +10,8 @@ public class PlayingProgress {
 
     public Integer id;              // 记录编号
 
-    public int accountId;           // 用户编号
+    //public int accountId;           // 用户编号
+    public String accountId;           // 用户编号(uuid)
 
     public int mediaId;             // 媒体编号
 
