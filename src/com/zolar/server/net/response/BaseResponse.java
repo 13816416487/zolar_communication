@@ -12,7 +12,37 @@ public class BaseResponse {
     public String userMsg = "";	// 给用户展示
     public String devMsg = "";	// 给安卓的提示信息
 
-    @Override
+    
+    
+    public int getErrorCode() {
+		return errorCode;
+	}
+
+	public void setErrorCode(int errorCode) {
+		this.errorCode = errorCode;
+	}
+
+	public String getUserMsg() {
+		return userMsg;
+	}
+
+	public void setUserMsg(String userMsg) {
+		this.userMsg = userMsg;
+	}
+
+	public String getDevMsg() {
+		return devMsg;
+	}
+
+	public void setDevMsg(String devMsg) {
+		this.devMsg = devMsg;
+	}
+
+	public static int getCodeSuccess() {
+		return Code_Success;
+	}
+
+	@Override
     public String toString() {
         return "BaseResponse{" +
                 "errorCode=" + errorCode +
